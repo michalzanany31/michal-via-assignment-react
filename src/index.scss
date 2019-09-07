@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Assistant-Bold', 'Poppins', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+
+@font-face {
+  font-family: Assistant;
+  src: url('./assets/fonts/Assistant-Regular.ttf');
+  src: url('./assets/fonts/Assistant-Regular.ttf?#iefix') format('embedded-opentype'), url('./assets/fonts/Assistant-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Assistant-Bold;
+  src: url('./assets/fonts/Assistant-Bold.ttf');
+  src: url('./assets/fonts/Assistant-Bold.ttf?#iefix') format('embedded-opentype'), url('./assets/fonts/Assistant-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Assistant-SemiBold;
+  src: url('./assets/fonts/Assistant-SemiBold.ttf');
+  src: url('./assets/fonts/Assistant-SemiBold.ttf?#iefix') format('embedded-opentype'), url('./assets/fonts/Assistant-SemiBold.ttf') format('truetype');
+}
+
+
+
