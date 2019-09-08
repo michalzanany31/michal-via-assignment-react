@@ -11,8 +11,8 @@ export default class Header extends React.Component {
    render() {
     return (
     <div className="header">
-        <div className="contact">Contact List</div> 
-        <div className="search">
+        <div className="title">Contact List</div> 
+        <div className="search d-none d-sm-flex">
         <input type="text" placeholder="Search..."/>
           <img alt="" src={search}/>
         </div>

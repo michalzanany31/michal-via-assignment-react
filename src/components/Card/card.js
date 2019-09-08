@@ -11,6 +11,8 @@ export default class Card extends React.Component {
     constructor(props) {
     super(props);
     this.handleMouseHover = this.handleMouseHover.bind(this);
+    this.professional = professional;
+    this.citizen = citizen;
     this.state = {
       isHovering: false,
     };
@@ -39,17 +41,19 @@ export default class Card extends React.Component {
 
             <div className="top-card">
                         <img className='profile-pic' src={item.profile_image? item.profile_image : profile} alt=""/>
-                        <img src={item.driverType && item.driverType.toLowerCase().trim() === 'professional'? professional :  citizen} className="icon" alt=""/>
                 </div>
                 <div className="contact-details">
+                        <img src={this[item.driverType.toLowerCase().trim()]} className="icon" alt=""/>
                     <h1>
                         {item.name}
                     </h1>
-                    <p>
+                    <div className="rank">
                         {item.driverRank}
+                    </div>
+                    <div className="additional-info">
                         {this.state.isHovering && <div>Phone Number: {item.phone}</div>}
                         {this.state.isHovering && <div>Email: {item.email}</div>}                          
-                    </p>
+                    </div>
               </div>
         </div>
       )

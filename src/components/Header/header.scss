@@ -4,14 +4,11 @@
   justify-content: space-between;
   width: 100%;
 
-    .mobile-only {
-    @media (min-width: 768px){
-      justify-content: center;
-    }
-  }
+    
+ 
 
-    .contact {
-    font-size: 20px
+    .title {
+    font-size: 20px;
     }
 
 
@@ -35,5 +32,9 @@
     input {
       border: none
     }
+
+       @media (max-width: 768px){
+      justify-content: center;
+  }
 
 }

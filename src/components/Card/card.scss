@@ -5,11 +5,12 @@
     border: none;
     margin-bottom: 10px;
     padding: 15px;
-    height: 90%;
 
     .top-card {
-        height: 245px;
-        overflow: hidden;
+        // height: 245px;
+        // max-height: 200px;
+        // transition: max-height 0.25s ease-in-out;
+        // overflow: hidden;
         img.icon {
             -webkit-clip-path: circle(60px at center);
             clip-path: circle(50px at center);
@@ -20,15 +21,23 @@
 
      img.profile-pic {
         width: 100%;
+        max-height: 230px;
+        object-fit: cover;
+        object-position: top;
+        min-height: 230px;
     }
 
     .contact-details {
         width: 100%;
+        background-color: white;
         text-align: left;
-        margin-top: 30px;
-    }
+        .additional-info {
+            max-height: 0;
+            transition: max-height 0.25s ease-in-out;
+        }
+    }  
 
-    p {
+    .additional-info, .rank {
         margin: 0;
         font-family: 'Assistant-Light', 'Poppins', sans-serif !important;
         color: #acacac;
@@ -46,19 +55,25 @@
         height: 40px;
         width: 40px;
         background-color: antiquewhite;
-        position: absolute;
         border-radius: 100px;
-        bottom: 60px;
-        left: 35px;  
+        position: relative;
+        top: -20px;
+        left: 20px;
     }
 
      &.hover {
-        .top-card {
-            height: 150px;
+        // .top-card {
+        //     max-height: 150px;
+        // }  
+        .contact-details {
+            margin-top: -33px;
             .icon{
                 bottom: 130px;
             } 
-        }  
+            .additional-info {
+                max-height: 100%;
+            }
+        }
     }   
 }
 
