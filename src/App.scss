@@ -32,16 +32,8 @@
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
 
-.search img {
-  height: 10px;
-}
-
-.first-container {
+.navbar {
   padding: 20px 50px;
   background-color: #20b8ea;
   color: white;
@@ -51,17 +43,6 @@
   z-index: 100;
 }
 
-.search {
-  background-color: white;
-  color: #c9cbce;
-  min-width: 300px;
-  padding: 0px 20px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Assistant-SemiBold';
-}
 
 
 .main-page {
@@ -70,18 +51,11 @@
   text-align: center;
 }
 
-.contact {
-  font-size: 20px
-}
 
 .container {
   padding-top: 70px;
   font-family: 'Assistant-SemiBold';
 }
 
-
-input {
-  border: none;
-}
 
 

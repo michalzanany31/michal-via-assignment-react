@@ -1,0 +1,39 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+    .mobile-only {
+    @media (min-width: 768px){
+      justify-content: center;
+    }
+  }
+
+    .contact {
+    font-size: 20px
+    }
+
+
+
+    .search {
+    background-color: white;
+    color: #c9cbce;
+    min-width: 300px;
+    padding: 0px 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Assistant-SemiBold';
+    }
+
+    .search img {
+    height: 10px;
+    }
+
+    input {
+      border: none
+    }
+
+}
