@@ -1,6 +1,9 @@
 import React from 'react';
 import search from '../../assets/img/search.svg';
+import searchMobile from '../../assets/img/search-mobile.svg';
 import './header.scss'
+import '../../index.scss';
+
 
 
 
@@ -12,6 +15,7 @@ export default class Header extends React.Component {
     return (
     <div className="header">
         <div className="title">Contact List</div> 
+        <img  alt="" src={searchMobile}  className="search-mobile d-md-none"/>
         <div className="search d-none d-sm-flex">
         <input type="text" placeholder="Search..."/>
           <img alt="" src={search}/>

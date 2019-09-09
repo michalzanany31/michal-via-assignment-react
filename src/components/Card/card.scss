@@ -33,19 +33,17 @@
         text-align: left;
         .additional-info {
             max-height: 0;
-            transition: max-height 0.25s ease-in-out;
         }
     }  
 
     .additional-info, .rank {
         margin: 0;
-        font-family: 'Assistant-Light', 'Poppins', sans-serif !important;
         color: #acacac;
-        font-size: 0.7rem
+        font-size: 0.7rem;
+        font-weight: 300;
     }
 
     h1 {
-        font-family: 'Assistant', 'Poppins', sans-serif !important;
         font-size: 1rem;
         color: #acacac;
         margin-bottom: 0
