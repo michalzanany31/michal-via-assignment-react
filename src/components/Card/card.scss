@@ -1,69 +1,68 @@
 .card {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    border: none;
-    margin-bottom: 10px;
-    padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-bottom: 10px;
+  padding: 15px;
 
-    .top-card {
-        img.icon {
-            -webkit-clip-path: circle(60px at center);
-            clip-path: circle(50px at center);
-        }
-    }  
-
-     img.profile-pic {
-        width: 100%;
-        max-height: 230px;
-        object-fit: cover;
-        object-position: top;
-        min-height: 230px;
+  .top-card {
+    img.icon {
+      -webkit-clip-path: circle(60px at center);
+      clip-path: circle(50px at center);
     }
+  }
 
+  img.profile-pic {
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+    object-position: top;
+    min-height: 230px;
+  }
+
+  .contact-details {
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    .additional-info {
+      max-height: 0;
+    }
+  }
+
+  .additional-info,
+  .rank {
+    margin: 0;
+    color: #acacac;
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    color: #acacac;
+    margin-bottom: 0;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+  }
+
+  &.hover {
     .contact-details {
-        width: 100%;
-        background-color: white;
-        text-align: left;
-        .additional-info {
-            max-height: 0;
-        }
-    }  
-
-    .additional-info, .rank {
-        margin: 0;
-        color: #acacac;
-        font-size: 0.7rem;
-        font-weight: 300;
+      margin-top: -33px;
+      .icon {
+        bottom: 130px;
+      }
+      .additional-info {
+        max-height: 100%;
+      }
     }
-
-    h1 {
-        font-size: 1.2rem;
-        color: #acacac;
-        margin-bottom: 0
-    }
-
-    .icon {
-        height: 40px;
-        width: 40px;
-        background-color: antiquewhite;
-        border-radius: 100px;
-        position: relative;
-        top: -20px;
-        left: 20px;
-    }
-
-     &.hover {
-        .contact-details {
-            margin-top: -33px;
-            .icon{
-                bottom: 130px;
-            } 
-            .additional-info {
-                max-height: 100%;
-            }
-        }
-    }   
+  }
 }
-
-

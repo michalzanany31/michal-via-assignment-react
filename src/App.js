@@ -1,10 +1,8 @@
-import React from 'react';
-import './App.scss';
-import Cards from './components/Cards/cards';
-import Header from './components/Header/header'
-import { Navbar  } from 'react-bootstrap';
-
-
+import React from "react";
+import "./App.scss";
+import Cards from "./components/Cards/cards";
+import Header from "./components/Header/header";
+import { Navbar } from "react-bootstrap";
 
 function App() {
   return (
@@ -15,11 +13,11 @@ function App() {
       </Navbar>
       <div>
         {/*This is the main page containing the contact info*/}
-        <div className="main-page">
+        <div className="contacts">
           <Cards />
         </div>
       </div>
-  </div>
+    </div>
   );
 }
 
