@@ -7,17 +7,11 @@
     padding: 15px;
 
     .top-card {
-        // height: 245px;
-        // max-height: 200px;
-        // transition: max-height 0.25s ease-in-out;
-        // overflow: hidden;
         img.icon {
             -webkit-clip-path: circle(60px at center);
             clip-path: circle(50px at center);
         }
-    }
-
-  
+    }  
 
      img.profile-pic {
         width: 100%;
@@ -44,7 +38,7 @@
     }
 
     h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #acacac;
         margin-bottom: 0
     }
@@ -60,9 +54,6 @@
     }
 
      &.hover {
-        // .top-card {
-        //     max-height: 150px;
-        // }  
         .contact-details {
             margin-top: -33px;
             .icon{

@@ -15,7 +15,9 @@ export default class Header extends React.Component {
     return (
     <div className="header">
         <div className="title">Contact List</div> 
+        {/*Will only show in mobile mode*/}
         <img  alt="" src={searchMobile}  className="search-mobile d-md-none"/>
+        {/*Will only show in desktop mode*/}
         <div className="search d-none d-sm-flex">
         <input type="text" placeholder="Search..."/>
           <img alt="" src={search}/>

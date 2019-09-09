@@ -18,7 +18,7 @@ export default class Card extends React.Component {
     };
   }
 
-
+  // We use the onMouseEnter and onMouseLeave events on the component and toggle the class accordingly.
   handleMouseHover() {
     this.setState(this.toggleHoverState);
   }
@@ -35,21 +35,22 @@ export default class Card extends React.Component {
       var item =  this.props.item;
       return (
         <div className={"card " + (this.state.isHovering ? "hover" : "")}
-        onMouseEnter={this.handleMouseHover}
-          onMouseLeave={this.handleMouseHover}
-        >
-
+        // We use onMouseEnter and onMouseLeave to change the state and render a component conditionally based on the value of the state.
+          onMouseEnter={this.handleMouseHover}
+          onMouseLeave={this.handleMouseHover}>
             <div className="top-card">
-                        <img className='profile-pic' src={item.profile_image? item.profile_image : profile} alt=""/>
+                <img className='profile-pic' src={item.profile_image? item.profile_image : profile} alt=""/>
                 </div>
                 <div className="contact-details">
-                        <img src={this[item.driverType.toLowerCase().trim()]} className="icon" alt=""/>
+                    {/*After trimming "driverType" and convert it to lowercase to handle edge cases, image will be shown according to the variables defined at the top of the page*/}
+                    <img src={this[item.driverType.toLowerCase().trim()]} className="icon" alt=""/>
                     <h1>
                         {item.name}
                     </h1>
                     <div className="rank">
                         {item.driverRank}
                     </div>
+                    {/*Will only show in hover mode*/}
                     <div className="additional-info">
                         {this.state.isHovering && <div>Phone Number: {item.phone}</div>}
                         {this.state.isHovering && <div>Email: {item.email}</div>}                          
